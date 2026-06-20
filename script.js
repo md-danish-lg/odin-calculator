@@ -13,7 +13,7 @@ let secondNumber = ""
 display = ""
 numberButtons.forEach((button) =>{
     button.addEventListener("click", (e)=>{
-        if(!(e.target.textContent == "." &&(firstNumber.includes("." || secondNumber.includes("."))))){
+        if(!(e.target.textContent == "." && (operate.length == 0 ? firstNumber.includes(".") : secondNumber.includes(".")))){
             if (operate.length == 0){
                 firstNumber += e.target.textContent;
                 
